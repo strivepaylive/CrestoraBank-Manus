@@ -1,0 +1,1 @@
+ALTER TABLE `registrations` ADD `preferredLanguage` varchar(5) DEFAULT 'en';

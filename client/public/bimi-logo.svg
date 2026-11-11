@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny-ps" viewBox="0 0 1024 1024">
+  <title>Crestora Bank</title>
+  <rect width="1024" height="1024" fill="#FFFFFF"/>
+  <g transform="rotate(-45 512 512) scale(0.92) translate(44.5,44.5)">
+    <polygon points="388,160 624,160 624,388 392,388 160,388" fill="#C9E4F8" transform="rotate(0 512 512)"/>
+    <polygon points="388,160 624,160 624,388 392,388 160,388" fill="#4DA6E8" transform="rotate(90 512 512)"/>
+    <polygon points="388,160 624,160 624,388 392,388 160,388" fill="#C9E4F8" transform="rotate(180 512 512)"/>
+    <polygon points="388,160 624,160 624,388 392,388 160,388" fill="#4DA6E8" transform="rotate(270 512 512)"/>
+  </g>
+</svg>

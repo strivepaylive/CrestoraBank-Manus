@@ -1,0 +1,21 @@
+CREATE TABLE `invoices` (
+	`id` int AUTO_INCREMENT NOT NULL,
+	`reference` varchar(64) NOT NULL,
+	`clientName` varchar(200) NOT NULL,
+	`clientEmail` varchar(320) NOT NULL,
+	`accountNumber` varchar(64) NOT NULL,
+	`bankName` varchar(200) NOT NULL,
+	`amount` decimal(14,2) NOT NULL,
+	`currency` varchar(8) NOT NULL DEFAULT 'USD',
+	`description` varchar(500) NOT NULL,
+	`dueDate` timestamp NOT NULL,
+	`customMessage` text,
+	`topLogoUrl` varchar(500),
+	`bottomLogoUrl` varchar(500),
+	`status` enum('draft','sent','paid','overdue') NOT NULL DEFAULT 'draft',
+	`pdfUrl` varchar(500),
+	`createdAt` timestamp NOT NULL DEFAULT (now()),
+	`updatedAt` timestamp NOT NULL DEFAULT (now()) ON UPDATE CURRENT_TIMESTAMP,
+	CONSTRAINT `invoices_id` PRIMARY KEY(`id`),
+	CONSTRAINT `invoices_reference_unique` UNIQUE(`reference`)
+);
